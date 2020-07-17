@@ -120,10 +120,6 @@ a > span {
 	list-style-type: none;
 }
 
-.doing-block {
-	text-align: center;
-}
-
 .doing-tittle {
 	font-weight: 700;
 	font-size: 14px;
@@ -131,14 +127,11 @@ a > span {
 	text-transform: uppercase;
 	color: var(--white-color);
 	background-color: rgba(47, 48, 58, 0.8);
+	text-align: center;
 }
 /* Наша команда */
 .command {
 	background-color: #f5f4fa;
-}
-
-.command-block {
-	text-align: center;
 }
 
 .command-list {
