@@ -4,68 +4,78 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>WebStudio</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/common.css" />
 	</head>
 	<body>
 		<!--Шапка сайта-->
 		<header>
-			<nav>
+			<div class="logo">
 				<a href="./index.html">
-					<span>Web</span>
+					<span class="first-word">Web</span>
 					Studio
 				</a>
-				<ul>
-					<li>
-						<a href="#">Студия</a>
+			</div>
+			<nav class="navigation">
+				<ul class="menu-list">
+					<li class="menu-item">
+						<a href="./index.html" class="menu-link">Студия</a>
 					</li>
-					<li>
-						<a href="#">Портфолио</a>
+					<li class="menu-item">
+						<a href="./portfolio.html" class="menu-link">Портфолио</a>
 					</li>
-					<li>
-						<a href="#">Контакты</a>
+					<li class="menu-item">
+						<a href="#" class="menu-link">Контакты</a>
 					</li>
 				</ul>
 			</nav>
-			<img src="./images/envelope.svg" alt="" />
-			<a href="mailto:info@devstudio.com">info@devstudio.com</a>
-			<img src="./images/smartphone.svg" alt="" />
-			<a href="tel:+380991111111">+38 099 111 11 11</a>
+			<div>
+				<img src="./images/envelope.svg" alt="иконка конверта" />
+				<a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a>
+				<img src="./images/smartphone.svg" alt=" иконка телефона" />
+				<a href="tel:+380991111111" class="contacts">+38 099 111 11 11</a>
+			</div>
 		</header>
 		<!--Основная страница сайта-->
 		<!--Секция 1 -->
 		<main>
-			<div>
-				<h1>Эффективные решения для вашего бизнеса</h1>
-				<button>Заказать услугу</button>
+			<div class="hero">
+				<h1 class="hero-tittle">Эффективные решения для вашего бизнеса</h1>
+				<button class="btn">Заказать услугу</button>
 			</div>
 			<!-- Секция 2 -->
 			<section>
-				<h2 hidden>Преимущества</h2>
-				<ul>
+				<h2 hidden class="main-tittle">Преимущества</h2>
+				<ul class="advantage-list">
 					<li>
 						<img src="./images/icons/antenna-1.svg" alt="" />
-						<h3>Внимание к деталям</h3>
-						<p>
+						<h3 class="advantage-tittle">Внимание к деталям</h3>
+						<p class="advantage-text">
 							Идейные соображения, а также начало повседневной работы по формированию позиции.
 						</p>
 					</li>
 					<li>
 						<img src="./images/icons/clock-1.svg" alt="" />
-						<h3>Пунктуальность</h3>
-						<p>
+						<h3 class="advantage-tittle">Пунктуальность</h3>
+						<p class="advantage-text">
 							Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
 						</p>
 					</li>
 					<li>
 						<img src="./images/icons/diagram-1.svg" alt="" />
-						<h3>Планирование</h3>
-						<p>
+						<h3 class="advantage-tittle">Планирование</h3>
+						<p class="advantage-text">
 							Равным образом консультация с широким активом в значительной степени обуславливает.
 						</p>
 					</li>
 					<li>
 						<img src="./images/icons/astronaut-1.svg" alt="" />
-						<h3>Современные технологии</h3>
-						<p>
+						<h3 class="advantage-tittle">Современные технологии</h3>
+						<p class="advantage-text">
 							Значимость этих проблем настолько очевидна, что реализация плановых заданий.
 						</p>
 					</li>
@@ -73,33 +83,33 @@
 			</section>
 			<!-- Чем занимаются -->
 			<section>
-				<h2>Чем мы занимаемся</h2>
-				<ul>
-					<li>
+				<h2 class="main-tittle">Чем мы занимаемся</h2>
+				<ul class="doing-list">
+					<li class="doing-block">
 						<img src="./images/What-we-do/img1.jpg" width="370" height="294" alt="" />
-						<h3>Десктопные приложения</h3>
+						<h3 class="doing-tittle">Десктопные приложения</h3>
 					</li>
-					<li>
+					<li class="doing-block">
 						<img src="./images/What-we-do/img2.jpg" width="370" height="294" alt="" />
-						<h3>Мобильные приложения</h3>
+						<h3 class="doing-tittle">Мобильные приложения</h3>
 					</li>
-					<li>
+					<li class="doing-block">
 						<img src="./images/What-we-do/img3.jpg" width="370" height="294" alt="" />
-						<h3>Дизайнерские решения</h3>
+						<h3 class="doing-tittle">Дизайнерские решения</h3>
 					</li>
 				</ul>
 			</section>
 			<!-- Команда -->
-			<section>
-				<h2>Наша команда</h2>
+			<section class="command">
+				<h2 class="main-tittle">Наша команда</h2>
 
-				<ul>
-					<li>
+				<ul class="command-list">
+					<li class="command-block">
 						<img src="./images/command/img1.jpg" width="270" height="260" alt="Фото николая" />
-						<h3>Николай Кучеренко</h3>
-						<p lang="en">Product Designer</p>
+						<h3 class="command-name">Николай Кучеренко</h3>
+						<p lang="en" class="command-position">Product Designer</p>
 						<ul>
-							<li>
+							<li class="social-link">
 								<a
 									href="https://www.instagram.com/"
 									target="_blank"
@@ -109,17 +119,17 @@
 									<img src="./images/social/instagram.svg" alt="" />
 								</a>
 							</li>
-							<li>
+							<li class="social-link">
 								<a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Твиттер">
 									<img src="./images/social/twitter.svg" alt="" />
 								</a>
 							</li>
-							<li>
+							<li class="social-link">
 								<a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Фейсбук">
 									<img src="./images/social/facebook.svg" alt="" />
 								</a>
 							</li>
-							<li>
+							<li class="social-link">
 								<a
 									href="https://www.linkedin.com/"
 									target="_blank"
@@ -131,12 +141,12 @@
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="command-block">
 						<img src="./images/command/img2.png" width="270" height="260" alt="фото ольги" />
-						<h3>Ольга Иванова</h3>
-						<p lang="en">Frontend Developer</p>
+						<h3 class="command-name">Ольга Иванова</h3>
+						<p lang="en" class="command-position">Frontend Developer</p>
 						<ul>
-							<li>
+							<li class="social-link">
 								<a
 									href="https://www.instagram.com/"
 									target="_blank"
@@ -146,17 +156,17 @@
 									<img src="./images/social/instagram.svg" alt="" />
 								</a>
 							</li>
-							<li>
+							<li class="social-link">
 								<a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Твиттер">
 									<img src="./images/social/twitter.svg" alt="" />
 								</a>
 							</li>
-							<li>
+							<li class="social-link">
 								<a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Фейсбук">
 									<img src="./images/social/facebook.svg" alt="" />
 								</a>
 							</li>
-							<li>
+							<li class="social-link">
 								<a
 									href="https://www.linkedin.com/"
 									target="_blank"
@@ -168,12 +178,12 @@
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="command-block">
 						<img src="./images/command/img3.jpg" width="270" height="260" alt="фото андрея" />
-						<h3>Андрей Шевченко</h3>
-						<p lang="en">Marketing</p>
+						<h3 class="command-name">Андрей Шевченко</h3>
+						<p lang="en" class="command-position">Marketing</p>
 						<ul>
-							<li>
+							<li class="social-link">
 								<a
 									href="https://www.instagram.com/"
 									target="_blank"
@@ -183,17 +193,17 @@
 									<img src="./images/social/instagram.svg" alt="" />
 								</a>
 							</li>
-							<li>
+							<li class="social-link">
 								<a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Твиттер">
 									<img src="./images/social/twitter.svg" alt="" />
 								</a>
 							</li>
-							<li>
+							<li class="social-link">
 								<a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Фейсбук">
 									<img src="./images/social/facebook.svg" alt="" />
 								</a>
 							</li>
-							<li>
+							<li class="social-link">
 								<a
 									href="https://www.linkedin.com/"
 									target="_blank"
@@ -205,12 +215,12 @@
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="command-block">
 						<img src="./images/command/img4.jpg" width="270" height="260" alt="фото ивана" />
-						<h3>Иван Николаев</h3>
-						<p lang="en">UI Designer</p>
+						<h3 class="command-name">Иван Николаев</h3>
+						<p lang="en" class="command-position">UI Designer</p>
 						<ul>
-							<li>
+							<li class="social-link">
 								<a
 									href="https://www.instagram.com/"
 									target="_blank"
@@ -220,17 +230,17 @@
 									<img src="./images/social/instagram.svg" alt="" />
 								</a>
 							</li>
-							<li>
+							<li class="social-link">
 								<a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Твиттер">
 									<img src="./images/social/twitter.svg" alt="" />
 								</a>
 							</li>
-							<li>
+							<li class="social-link">
 								<a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Фейсбук">
 									<img src="./images/social/facebook.svg" alt="" />
 								</a>
 							</li>
-							<li>
+							<li class="social-link">
 								<a
 									href="https://www.linkedin.com/"
 									target="_blank"
@@ -246,34 +256,34 @@
 			</section>
 			<!-- Клиенты -->
 			<section>
-				<h2>Постоянные клиенты</h2>
+				<h2 class="main-tittle">Постоянные клиенты</h2>
 				<ul>
-					<li>
+					<li class="clients-list">
 						<a href="#" target="_blank" rel="noopener noreferrer" aria-label="ссылка YA & CO">
 							<img src="./images/logo-clients/logo1.svg" alt="" />
 						</a>
 					</li>
-					<li>
+					<li class="clients-list">
 						<a href="#" target="_blank" rel="noopener noreferrer" aria-label="ссылка Company tag line here">
 							<img src="./images/logo-clients/logo2.svg" alt="" />
 						</a>
 					</li>
-					<li>
+					<li class="clients-list">
 						<a href="#" target="_blank" rel="noopener noreferrer" aria-label="ссылка Company">
 							<img src="./images/logo-clients/logo3.svg" alt="" />
 						</a>
 					</li>
-					<li>
+					<li class="clients-list">
 						<a href="#" target="_blank" rel="noopener noreferrer" aria-label="ссылка FOSTER PETERS">
 							<img src="./images/logo-clients/logo4.svg" alt="" />
 						</a>
 					</li>
-					<li>
+					<li class="clients-list">
 						<a href="#" target="_blank" rel="noopener noreferrer" aria-label="ссылка Brand">
 							<img src="./images/logo-clients/logo5.svg" alt="" />
 						</a>
 					</li>
-					<li>
+					<li class="clients-list">
 						<a href="#" target="_blank" rel="noopener noreferrer" aria-label="ссылка Company tag line">
 							<img src="./images/logo-clients/logo6.svg" alt="" />
 						</a>
@@ -282,22 +292,23 @@
 			</section>
 		</main>
 		<!--Подвал сайта-->
-		<footer>
-			<div>
+		<footer class="footer">
+			<div class="logo">
 				<a href="./index.html">
-					<span>Web</span>
+					<span class="first-word">Web</span>
 					Studio
 				</a>
-				<address>
-					<p>г. Киев, пр-т Леси Украинки, 26</p>
-					<a href="mailto:info@devstudio.com">info@devstudio.com</a>
-					<a href="tel:+380991111111">+38 099 111 11 11</a>
-				</address>
 			</div>
+			<address class="address">
+				<p>г. Киев, пр-т Леси Украинки, 26</p>
+				<a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a>
+				<a href="tel:+380991111111" class="footer-contacts">+38 099 111 11 11</a>
+			</address>
+
 			<div>
-				<p>присоединяйтесь</p>
+				<p class="footer-text">присоединяйтесь</p>
 				<ul>
-					<li>
+					<li class="social-link">
 						<a
 							href="https://www.instagram.com/"
 							target="_blank"
@@ -307,17 +318,17 @@
 							<img src="./images/social/instagram.svg" alt="" />
 						</a>
 					</li>
-					<li>
+					<li class="social-link">
 						<a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Твиттер">
 							<img src="./images/social/twitter.svg" alt="" />
 						</a>
 					</li>
-					<li>
+					<li class="social-link">
 						<a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Фейсбук">
 							<img src="./images/social/facebook.svg" alt="" />
 						</a>
 					</li>
-					<li>
+					<li class="social-link">
 						<a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Линкедин">
 							<img src="./images/social/linkedin.svg" alt="" />
 						</a>
@@ -325,7 +336,8 @@
 				</ul>
 			</div>
 			<div>
-				<p>Подпишитесь на рассылку</p>
+				<p class="footer-text">Подпишитесь на рассылку</p>
+				<button class="btn">Подписаться</button>
 			</div>
 		</footer>
 	</body>
